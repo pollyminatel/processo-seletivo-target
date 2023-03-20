@@ -1,0 +1,68 @@
+Questão 1
+Ao final do processamento, qual será o valor da variável SOMA? 
+Durante o processo o K aumenta de forma unitária enquando esse valor é somado com o antigo valor de SOMA. Dessa forma o resultado final de SOMA é 91.
+
+Questão 2
+n = int(input("Qual número deseja checar? "))
+sequencia = [0, 1]
+
+for i in range(n+1):
+    ultimo = sequencia[-1]
+    penultimo = sequencia[-2]
+    if n != 1:
+        sequencia.append(ultimo + penultimo)
+    if ultimo > n:
+        break
+
+if n in sequencia:
+    print("SIM, este número está na sequência de Fibonacci")
+else:
+    print("NÃO, este número não está na sequência de Fibonacci")
+
+
+Questão 3
+Descubra a lógica e complete o próximo elemento:
+
+a) 1, 3, 5, 7, ___9
+
+b) 2, 4, 8, 16, 32, 64, ____128
+
+c) 0, 1, 4, 9, 16, 25, 36, ____49
+
+d) 4, 16, 36, 64, ____100
+
+e) 1, 1, 2, 3, 5, 8, ____13
+
+f) 2,10, 12, 16, 17, 18, 19, ____200
+
+Questão 4
+Velocidade carro = V1 = 110km/h
+Velocidade caminhão = V2 = 80km/h
+
+Considerando que o caminhão tem um adicional de 5 minutos em 2 paradas, totalizando 10 minutos, sua nova velocidade pode ser calculada fazendo regra de três e soma.
+
+Calculando quanto tempo ele leva para adicionar a cidade sem paradas:
+t = 100*60/80 = 75 minutos
+Adicionando 10 minutos e calculando a velocidade:
+t = 85 minutos
+V2' = 100*60/85 = 70,59km/h
+
+Se multiplicarmos a velocidade pelo tempo e adicionarmos a posição atual, teremos a posição dos carros considernado a reta de 100km. Eles se cruzam quando estiverem na mesma posição:
+Carro:
+S1 = 110t + 0
+Caminhão:
+S2 = -70,59t + 100 (velocidade negativa pois está no sentido contrário ao carro)
+Assim:
+S1=S2
+110t = -70,59t + 100
+t = 0,554 horas
+
+Depois de 0,554 horas o carro terá percorrido 110*0,554 = 60,94km 
+Depois de 0,554 horas o caminhão terá percorrido 70,59*0,554 = 39,10km 
+
+Dessa forma, o carro está a 60,94km de Ribeirão preto e o caminhão a (100-39,10) 60,9km. Então o caminhão está mais próximo de Ribeirão preto.
+
+Questão 5
+string = "Essa é uma string"
+string_invertida = string[::-1]
+print(string_invertida)  
